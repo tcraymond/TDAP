@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TDAP", "TDAP\TDAP.vcxproj", "{98B31521-8C42-4440-8386-89D984749326}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TransFE", "TransFE\TransFE.vcxproj", "{367D856B-5DCA-4A1B-B892-682EEAE677BE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{EC2998C9-EDD9-40CE-B40F-E1BF30270C09} = {EC2998C9-EDD9-40CE-B40F-E1BF30270C09}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MeshDB", "TransFE\MeshDB\MeshDB.vcxproj", "{EC2998C9-EDD9-40CE-B40F-E1BF30270C09}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{98B31521-8C42-4440-8386-89D984749326}.Debug|Win32.ActiveCfg = Debug|Win32
+		{98B31521-8C42-4440-8386-89D984749326}.Debug|Win32.Build.0 = Debug|Win32
+		{98B31521-8C42-4440-8386-89D984749326}.Release|Win32.ActiveCfg = Release|Win32
+		{98B31521-8C42-4440-8386-89D984749326}.Release|Win32.Build.0 = Release|Win32
+		{367D856B-5DCA-4A1B-B892-682EEAE677BE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{367D856B-5DCA-4A1B-B892-682EEAE677BE}.Debug|Win32.Build.0 = Debug|Win32
+		{367D856B-5DCA-4A1B-B892-682EEAE677BE}.Release|Win32.ActiveCfg = Release|Win32
+		{367D856B-5DCA-4A1B-B892-682EEAE677BE}.Release|Win32.Build.0 = Release|Win32
+		{EC2998C9-EDD9-40CE-B40F-E1BF30270C09}.Debug|Win32.ActiveCfg = Debug|Win32
+		{EC2998C9-EDD9-40CE-B40F-E1BF30270C09}.Debug|Win32.Build.0 = Debug|Win32
+		{EC2998C9-EDD9-40CE-B40F-E1BF30270C09}.Release|Win32.ActiveCfg = Release|Win32
+		{EC2998C9-EDD9-40CE-B40F-E1BF30270C09}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

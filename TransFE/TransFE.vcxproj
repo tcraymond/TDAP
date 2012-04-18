@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{367D856B-5DCA-4A1B-B892-682EEAE677BE}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>TransFE</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CompileAsManaged>false</CompileAsManaged>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MinimalRebuild>true</MinimalRebuild>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <SmallerTypeCheck>true</SmallerTypeCheck>
+      <DisableSpecificWarnings>4710; 4514; 4820</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="algebraicsystem.h" />
+    <ClInclude Include="assembler.h" />
+    <ClInclude Include="constraint.h" />
+    <ClInclude Include="discretesystem.h" />
+    <ClInclude Include="displacementconstraint.h" />
+    <ClInclude Include="dof.h" />
+    <ClInclude Include="feanalysis.h" />
+    <ClInclude Include="feprog.h" />
+    <ClInclude Include="forcecontributor.h" />
+    <ClInclude Include="lin1dsf.h" />
+    <ClInclude Include="linearsystemassembler.h" />
+    <ClInclude Include="linquadsf.h" />
+    <ClInclude Include="lintrisf.h" />
+    <ClInclude Include="magaxistaticanalysis.h" />
+    <ClInclude Include="magaxistaticfc.h" />
+    <ClInclude Include="magaxistaticsc.h" />
+    <ClInclude Include="mapping.h" />
+    <ClInclude Include="mapping1d2d.h" />
+    <ClInclude Include="mapping2d.h" />
+    <ClInclude Include="mapping2daxi.h" />
+    <ClInclude Include="matrix.h" />
+    <ClInclude Include="precisiontimer.h" />
+    <ClInclude Include="quad1dsf.h" />
+    <ClInclude Include="quadquadsf.h" />
+    <ClInclude Include="quadtrisf.h" />
+    <ClInclude Include="shapefunction.h" />
+    <ClInclude Include="stiffnesscontributor.h" />
+    <ClInclude Include="typedefs.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="algebraicsystem.cpp" />
+    <ClCompile Include="discretesystem.cpp" />
+    <ClCompile Include="displacementconstraint.cpp" />
+    <ClCompile Include="dof.cpp" />
+    <ClCompile Include="feanalysis.cpp" />
+    <ClCompile Include="feprog.cpp" />
+    <ClCompile Include="forcecontributor.cpp" />
+    <ClCompile Include="lin1dsf.cpp" />
+    <ClCompile Include="linearsystemassembler.cpp" />
+    <ClCompile Include="linquadsf.cpp" />
+    <ClCompile Include="lintrisf.cpp" />
+    <ClCompile Include="magaxistaticanalysis.cpp" />
+    <ClCompile Include="magaxistaticfc.cpp" />
+    <ClCompile Include="magaxistaticsc.cpp" />
+    <ClCompile Include="mapping1d2d.cpp" />
+    <ClCompile Include="mapping2d.cpp" />
+    <ClCompile Include="mapping2daxi.cpp" />
+    <ClCompile Include="quad1dsf.cpp" />
+    <ClCompile Include="quadquadsf.cpp" />
+    <ClCompile Include="quadtrisf.cpp" />
+    <ClCompile Include="stiffnesscontributor.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
